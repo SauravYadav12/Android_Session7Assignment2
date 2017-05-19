@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent contact = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
 
-                startActivityForResult(contact,RESULT_OK);
+                startActivity(contact);
             }
         });
     }
